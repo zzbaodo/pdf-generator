@@ -339,7 +339,7 @@ const DisplayPDF = ({ customer }) => {
               },
             }
             try {
-              axios.post("/sendmail", data, config).then((res) => {
+              axios.post("https://pdf-generator1.herokuapp.com/sendmail", data, config).then((res) => {
                 
                 if (res.data.mes === "success") {
                   setRespond("success")
