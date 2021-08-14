@@ -314,6 +314,8 @@ const DisplayPDF = ({ customer }) => {
       </Page>
     </Document>
   )
+  const devURl = "https://localhost:5002/sendmail"
+  const prodURL = "https://pdf-generator1.herokuapp.com/sendmail"
   const onClickHandler = async () => {
     const blob = await pdf(Template).toBlob()
     const uploadTask = storage.ref(`pdfs/${customer.name}`).put(blob)
@@ -339,7 +341,7 @@ const DisplayPDF = ({ customer }) => {
               },
             }
             try {
-              axios.post("https://pdf-generator1.herokuapp.com/sendmail", data, config).then((res) => {
+              axios.post(devURl, data, config).then((res) => {
                 
                 if (res.data.mes === "success") {
                   setRespond("success")

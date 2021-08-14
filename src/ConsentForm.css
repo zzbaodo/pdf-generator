@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+}
+
+label {
+  display: block;
+  margin-top: 5px;
+}
+.my-container {
+  width: 1240px;
+  margin: 0 auto;
+  height: 1754px;
+  overflow: hidden;
+
+}
+main {
+  margin: 40px 40px !important;
+}
+
+input {
+  background-color: #e6c4bb;
+  border: 0 solid black;
+  margin: 5px 5px;
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+span {
+  background-color: #e6c4bb;
+  width: 30px;
+  height: 12px;
+  padding-left: 50;
+  padding-right: 50;
+}
+#name {
+  width: 100%;
+}
+.form-field-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#Phone {
+  width: 100%;
+}
+#DOB {
+  width: 90%;
+}
+#Age {
+  width: 80%;
+}
+#address {
+  width: 100%;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-text {
+  width: 70%;
+}
+.logo-container {
+  margin: 0 auto;
+}
+#City {
+  width: 100%;
+}
+#State {
+  width: 30%;
+}
+#Zip {
+  width: 35%;
+}
+#procedure {
+  width: 1040px;
+  white-space: nowrap;
+}
+.bold-strong {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.acknowledge-input {
+  display: inline;
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.sig-container {
+  display: flex;
+  justify-content: space-between;
+}
+.sig-col {
+  width: 70%;
+}
+.sig-col > input {
+  width: 100%;
+  margin: 0 0;
+}
+
+.date-col {
+  width: 30%;
+  margin-left: 30px;
+}
+.date-col > input {
+  width: 100%;
+}
